@@ -51,7 +51,7 @@ function updateSchedule() {
 function download() {
 	var json = JSON.stringify(createJsonFromForm());
 	var date = new Date().toISOString().substr(0, 16);
-	var filename = "hive_"+hub_type+"_"+hub_name+"_schedule_"+date+".txt";
+	var filename = "hive_"+hub_type+"_"+hub_name+"_schedule_.txt";
 	var element = document.createElement('a');
 	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(json));
 	element.setAttribute('download', filename);
